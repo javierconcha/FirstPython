@@ -161,10 +161,12 @@ class MyPlotWidget( MatplotlibFigureCanvasQTAgg ):
 	## REFRESH THE PLOT
 	# ----------------------------------------------------------------------------------------------
 	def fuckYouNokia( self ):
+		self.draw();
+		QtCore.QCoreApplication.processEvents( );
 
-		windowSize = self.myTopWindowReference.size();
-		self.myTopWindowReference.resize( windowSize.width()-1, windowSize.height() );
-		self.myTopWindowReference.resize( windowSize.width(), windowSize.height() );
+		# windowSize = self.myTopWindowReference.size();
+		# self.myTopWindowReference.resize( windowSize.width()-1, windowSize.height() );
+		# self.myTopWindowReference.resize( windowSize.width(), windowSize.height() );
 
 		return None;
 	#fed -------------------------------------------------------------------------------------------

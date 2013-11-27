@@ -78,31 +78,31 @@ imgplot = plt.imshow(imgRGB)
 plt.grid(True)
 plt.axis('equal')
 plt.colorbar()
-plt.show()
-# #----------------------------------------------------
-# # Plotting images
-# plt.figure(2)
-# plt.subplot(221)
-# imgplot = plt.imshow(ArrayB5crop)
-# plt.gray()
-# plt.grid(True)
-# plt.axis('equal')
-# # plt.colorbar()
-
-# plt.subplot(222)
-# plt.hist(ArrayB5crop,fc='k',ec='k')
-
-# plt.subplot(223)
-# imgplot = plt.imshow(ArrayB5cropeq)
-# plt.gray()
-# plt.grid(True)
-# plt.axis('equal')
-# # plt.colorbar()
-
-# plt.subplot(224)
-# plt.hist(ArrayB5cropeq,fc='k',ec='k')
-
 # plt.show()
+#----------------------------------------------------
+# Plotting images
+f = plt.figure(2)
+ax = f.add_subplot(221)
+imgplot = plt.imshow(ArrayB5crop)
+ax.gray()
+ax.grid(True)
+ax.axis('equal')
+# plt.colorbar()
+
+plt.subplot(222)
+plt.hist(ArrayB5crop,fc='k',ec='k')
+
+plt.subplot(223)
+imgplot = plt.imshow(ArrayB5cropeq)
+plt.gray()
+plt.grid(True)
+plt.axis('equal')
+# plt.colorbar()
+
+plt.subplot(224)
+plt.hist(ArrayB5cropeq,fc='k',ec='k')
+
+plt.show()
 #----------------------------------------------------
 # def f(t):
 # 	return np.exp(-t)*np.cos(2*np.pi*t)
@@ -137,9 +137,9 @@ plt.show()
 
 # for i in range( 0, numPixels, 1 ):
 
-# 	imagePixelDataR.append( (imagePixelDataRGB[i])[0] );
-# 	imagePixelDataG.append( (imagePixelDataRGB[i])[1] );
-# 	imagePixelDataB.append( (imagePixelDataRGB[i])[2] );
+# imagePixelDataR.append( (imagePixelDataRGB[i])[0] );
+# imagePixelDataG.append( (imagePixelDataRGB[i])[1] );
+# imagePixelDataB.append( (imagePixelDataRGB[i])[2] );
 
 # 	if ( len( imagePixelDataRGB[i]) ):
 # 		imagePixelDataA.append( (imagePixelDataRGB[i])[3]);
