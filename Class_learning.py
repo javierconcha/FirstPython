@@ -37,10 +37,7 @@ class Employee:
 emp_1 = Employee('Javier','Concha', 50000)
 emp_2 = Employee('Gustav','Pear', 60000)
 
-import datetime
-my_date = datetime.date(2016, 7, 11)
 
-print(Employee.is_workday(my_date))
 
 # Third video
 # https://youtu.be/rq8cL2XMM5M
@@ -55,6 +52,11 @@ print(Employee.is_workday(my_date))
 
 # print(new_emp_1.email)
 # print(new_emp_1.pay)
+
+# import datetime
+# my_date = datetime.date(2016, 7, 11)
+
+# print(Employee.is_workday(my_date))
 
 # Second video
 # print(emp_1.__dict__)
